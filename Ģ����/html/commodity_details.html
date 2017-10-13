@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>美依家</title>
+		<script src = '../js/jquery-1.11.1.js'></script>
+		<script src = '../js/index.js'></script>
+		<script type = "text/javascript" src="../js/jquery.cookie.js"></script>
+		<script src = "../js/parabola.js"></script>
+
+		<script src = '../js/shop_cart.js'></script>
+
+		<script src = "../js/commodity_details.js"></script>
+
+		<!--<script src = "../js/MQuery_animate.js"></script>-->
+		<script src = "../js/MQuery_animate.js"></script>
+		 
+		<script type = "text/javascript" src = "../js/startMove.js"></script>
+		<link rel="stylesheet" href="../css/index.css"/>
+		<link rel="stylesheet" href="../css/commodity_details.css"/>
+		<link rel="stylesheet" type="text/css" href="../font_star/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="../font/iconfont.css">
+		
+	</head>
+	<body style="overflow:-Scroll;overflow-x:hidden">
+		<!-- 购物车小球============================================= -->
+		<div id = "ball"></div>
+		<!--加载侧边菜单==================-->
+		<div class="sidemenu">
+			<div><a href="#"><i class='iconfont icon-gouwuchekong'></i><span>购物车</span><span id = "commodity_num">0</span></a></div>
+			<div><a href="#"><i class="iconfont icon-youhuiquan3"></i><span>优惠券</span></a></div>
+			<div><a href="#"><i class="iconfont icon-qianbao"></i><span>钱包</span></a></div>
+			<div><a href="#"><i class="iconfont icon-zuji"></i><span>足迹</span></a></div>
+			<div>
+				<a href="">
+					<p></p>
+					<p>TOP</p>
+				</a>
+				
+			</div>
+		</div>
+		<!--==============================-->
+		<!--引入首页头部=====================-->
+		<div class="head">
+			<p class="icon"><a href="#"><span>蘑菇街首页</span></a></p>
+			<ul class="head_meau">
+				<li><a href="http://localhost/AJAX/%E8%98%91%E8%8F%87%E8%A1%97/html/login.html#" target="_blank">登陆</a></li>
+				<li><a class="meau_1" href="#"><span></span> 我的订单</a></li>
+				<li><a class="meau_2" href="#"><span></span> 购物车
+					<div class="shopping_cart">
+						<b>购物车里没有商品！</b>
+					</div>
+				</a></li>
+				<li><a class="meau_3" href="#">客户服务 <span></span>
+					<div class="client">
+						<p>消费者服务</p>
+						<p>商家服务</p>
+						<p>规则中心</p>
+					</div>
+				</a></li>
+				<li><a class="meau_4" href="#"><span></span> 我的小店 <span></span>
+					<div class="smallshop">
+						<p>管理后台</p>
+						<p>商家社区</p>
+						<p>商家培训</p>
+						<p>市场入驻</p>
+					</div>
+				</a></li>
+			</ul>
+		</div>
+		<!--============================-->
+		<div class="detail_top">
+			<div class="detail_top_left">
+				<a class="meiyijia" href="#">
+					<img src="../images/170904_4655b93ci64ibk06gli3el7cjjfff_200x200.jpg_100x100.jpg"/>
+				</a>
+				<div class="shop_name">
+					<p class="shop_name_mark">
+						<a href="#">美依家</a>
+						<img src="../images/idid_ifqwgmrzgvqtenjsmqzdambqgyyde_60x36.png"/> 
+					</p>
+					<div class="shop_name_star">
+						<i class="iconfont icon-wujiaoxing3"></i>
+						<i class="iconfont icon-wujiaoxing3"></i>
+						<i class="iconfont icon-wujiaoxing3"></i>
+						<i class="iconfont icon-wujiaoxing3"></i>
+						<i class="iconfont icon-wujiaoxing3"></i>
+					</div>
+					<p class="shop_name_desc">
+						<span>描述<b>4.73</b></span>
+						<span>质量<b>4.73</b></span>
+						<span>服务<b>4.80</b></span>
+					</p>
+				</div>
+				<a class="detail_top_left_collect" href="#">+收藏</a>
+				<a class="detail_top_left_privatechat" href="#"><div></div></a>
+				<div class="detail_top_left_triangle"></div>
+				<div class="detail_top_left_line"></div>
+			</div>
+			<div class="detail_top_right">
+				<div class="detail_top_right_search">
+					<input class="search_shop" type="button" value="搜本店">
+					<form>
+						<input type="text">
+						<input type="submit" value="搜全站">
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="detail_banner">
+			<a href="#"></a>
+		</div>
+		<div class="detail_catalogue">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">全部商品<span></span></a></li>
+				<li><a href="#">9月份新品推荐</a></li>
+				<li><a href="#">最IN套装</a></li>
+				<li><a href="#">热卖推荐</a></li>
+				<li><a href="#">牛仔裤</a></li>
+				<li><a href="#">衬衫</a></li>
+				<li><a href="#">T恤</a></li>
+			</ul>
+		</div>
+		<div class="shop_detail">
+			<div class="shop_detail_">
+				<div class="shop_detail_photo">
+					<div class="displayframe">
+						<img src="../images/171004_2gke7bfae7k97fggjad0j9fd92f91_640x960.jpg_468x468.jpg">
+						<img src="../images/171004_1gaj8h09la76g13gce18j12l8bkd2_640x960.jpg_468x468.jpg">
+						<img src="../images/171004_72k9b08f68056cf7l8a6c0g31b44f_640x960.jpg_468x468.jpg">
+						<img src="../images/171004_03ailchf503cgj038h54d01ie9bc9_640x960.jpg_468x468.jpg">
+						<img src="../images/171004_40bfca750kfb5g50j09c90c2c6bf3_640x960.jpg_468x468.jpg">
+						<img src="../images/171004_2gke7bfae7k97fggjad0j9fd92f91_640x960.jpg_468x468.jpg">
+						<img src="../images/171004_4lb74dda8hl6f1b6iaeicd77bdlk5_640x960.jpg_468x468.jpg">
+						<img src="../images/171004_2kbjee9lc757ag6jbj09akk5j3f3c_640x960.jpg_468x468.jpg">
+					</div>
+					<div class="thumbnail">
+						<div class="thumbnail_">
+							<a href="#"><img src="../images/171004_5c91g4ag136f3befjdef9b8lff6jj_640x960.jpg_100x100 (1).jpg"></a>
+							<a href="#"><img src="../images/171004_1gaj8h09la76g13gce18j12l8bkd2_640x960.jpg_100x100 (1).jpg"></a>
+							<a href="#"><img src="../images/171004_72k9b08f68056cf7l8a6c0g31b44f_640x960.jpg_100x100 (1).jpg"></a>
+							<a href="#"><img src="../images/171004_03ailchf503cgj038h54d01ie9bc9_640x960.jpg_100x100 (1).jpg"></a>
+							<a href="#"><img src="../images/171004_40bfca750kfb5g50j09c90c2c6bf3_640x960.jpg_100x100.jpg"></a>
+							<a href="#"><img src="../images/171004_2gke7bfae7k97fggjad0j9fd92f91_640x960.jpg_100x100 (1).jpg"></a>
+							<a href="#"><img src="../images/171004_4lb74dda8hl6f1b6iaeicd77bdlk5_640x960.jpg_100x100 (1).jpg"></a>
+							<a href="#"><img src="../images/171004_2kbjee9lc757ag6jbj09akk5j3f3c_640x960.jpg_100x100 (1).jpg"></a>		
+						</div>
+						
+					</div>
+					<span class="thumbnail_left"  ></span>
+					<span class="thumbnail_right"  ></span>
+				</div>
+				<div class="shop_detail_left">
+					<h1>
+						<span>秋季新款韩版复古麻花菱形宽松加厚喇叭袖套头毛衣毛衣针织衫上衣</span>
+					</h1>
+					<div class="shop_detail_left_price">
+						<div class="countdown">
+							<span class="shop_detail_left_price_img">
+								<img src="../images/upload_ifrteylbga3dqmjqmezdambqhayde_26x28.png">
+								<span>团购精选百里挑一</span>
+							</span>
+							<span class="shop_detail_left_price_txt">后结束</span>
+
+							<span class="shop_detail_left_price_countdown">
+								<span id="d">00</span>天
+								<span id="h">00</span>小时
+								<span id="m">00</span>分
+								<span id="s">00</span>秒
+							</span>
+						</div>
+						<div class="countdown_under">
+							<dl class="countdown_under_price">
+								<dt>价格:</dt>
+								<dd>￥107.15</dd>
+							</dl>
+							<dl class="countdown_under_69">
+								<dt>团购价:</dt>
+								<dd class="countdown_under_69_dd1"><span>￥69.64</span></dd>
+								<dd class="countdown_under_69_dd2">
+									<span class="countdown_under_69_dd2_span1">评价：<span>4</span></span>
+									<span class="countdown_under_69_dd2_span2">累计销量：<span>27</span></span>
+								</dd>
+							</dl>
+							<div class="discount">
+								<span>店铺优惠：</span>
+								<span>▪&nbsp;满2件立减5元</span>
+							</div>
+						</div>
+						<div class="require require_first">
+							<span class="select">客服：</span>
+							<div class="service"></div>
+						</div>
+						<div class="require">
+							<span class="select">颜色：</span>
+							<div class="img">
+								<a href="#">
+									<img src="../images/171004_4c92afbakfefaj7i4kklgi0c703b1_640x960.jpg_100x100.jpg" >
+								</a>
+								<a href="#">
+									<img src="../images/171004_4a8l1kib6fh22509jb7jdbb32jll3_640x960.jpg_100x100.jpg" >
+								</a>
+								<a href="#">
+									<img src="../images/171004_4d8ifdh9lf4glf3l86274hgfa75lc_640x960.jpg_100x100.jpg" >
+								</a>
+							</div>
+						</div>
+						<div class="require">
+							<span class="select">尺码：</span>
+							<div class="size">
+								<a href="#">均码</a>
+							</div>
+						</div>
+						<div class="require">
+							<span class="select">数量：</span>
+							<div class="num">
+								<div>
+									<a href="" id= "min"></a>
+									<input type="text" value="1" id="quantity">
+									<a href="" id="add"></a>
+								</div>
+								<div></div>
+							</div>
+						</div>
+						<div class="purcharse">
+							<a  href="#">立刻购买</a>
+							<a id = "0" href="#">加入购物车</a>
+						</div>
+						<div class="share_report">
+							<a href="#">
+								<span class="iconfont icon-wujiaoxing2"></span>
+								<span>219</span>
+							</a>
+							<a href="#">
+								<span></span>
+								<span>分享</span>
+							</a>
+							<a href="#">举报</a>
+						</div>
+						<div class="detail_end">
+							<div class="specialproduct overflow_">
+								<div class="detail_end_title">商品特色：</div>
+								<ul>
+									<li><img src="../images/upload_655a8fjadhhj1hbd87ae13hd91325_60x60.png"/><span>蘑菇良品</span></li>
+									<li><img src="../images/upload_4feh98909481a8805bbdal579kg79_60x60.png"/><span>实拍认证</span></li>
+								</ul>
+							</div>
+							<div class="specialproduct z_index">
+								<div class="detail_end_title">服务承诺：</div>
+								<ul class="commitment">
+									<li><img src="../images/idid_ie4timrzmq3tkzbzmezdambqgqyde_40x40.png"/><span>退货补运费</span></li>
+									<li><img src="../images/idid_ie3tmyjxhfrtgzbzmezdambqgayde_40x40.png"/><span>全国包邮</span></li>
+									<li><img src="../images/idid_ifrtgojygu2dgzbzmezdambqhayde_40x40.png"/><span>7天无理由退货</span></li>
+									<li><img src="../images/idid_ifrdqobzmq3dizbzmezdambqmeyde_40x40.png"/><span>72小时发货</span></li>
+									<li><img src="../images/idid_ie4dqyrvgm4dkzbzmezdambqgiyde_40x40.png"/><span>模特实拍</span></li>
+									<li><img src="../images/idid_ifrtkzrshbrdkzbzmezdambqhayde_40x40.png"/><span>劣一赔三服务</span></li>
+								</ul>
+								
+							</div>
+							<div class="payment">
+								<div class="detail_end_title">支付方式：</div>
+								<div class="payment_icon"></div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="shop_detail_right">
+					<i></i>
+					<span>热卖推荐</span>
+					<ul>
+						<li>
+							<a href="#"><img src="../images/2654_7l6d0h8kcb02h17jfa31845d0092k_640x960.jpg_220x330.jpg"></a>
+							<div>￥64.81</div>
+						</li>
+						<li>
+							<a href="#"><img src="../images/170909_4263785d76aekalh4ig6i9b98gc6i_640x960.jpg_220x330.jpg"></a>
+							<div>￥59.14</div>
+						</li>
+						<li>
+							<a href="#"><img src="../images/170808_80lb1f6699lil215k6lhb63jd7l3g_640x960.jpg_220x330.jpg"></a>
+							<div>￥51.00</div>
+						</li>
+					</ul>
+				</div>
+					
+			</div>
+			
+		</div>
+		<div class="down">
+			<div class="down_left">
+				<div class="down_left_first">
+					<div class="down_left_first_name">
+						<a href="#">美依家<div></div></a>
+					</div>
+					<div class="down_left_first_desc">
+						<div class="shop_evaluate">
+							<ul>
+								<li>
+									<p>描述</p>
+									<p>4.73</p>
+								</li>
+								<li>
+									<p>质量</p>
+									<p>4.73</p>
+								</li>
+								<li>
+									<p>服务</p>
+									<p>4.8</p>
+								</li>
+							</ul>
+						</div>
+						<div class="shop_btn">
+							<a href="#">收藏店铺</a>
+							<a href="#">进入店铺</a>
+						</div>
+						<div class="shop_provide">
+							 
+							<i class="arrow"></i>
+							<img src="../images/upload_ie2dsmbsmyydcmtbgmzdambqgiyde_150x26.png" >
+						</div>
+					</div>
+				</div>
+				<!-- 分类模块============================= -->
+				<div class="down_left_second">
+					<div class="shop_classify">本店分类</div>
+					<div class="classify_list">
+						<ul>
+							<li><a href="#">全部商品</a></li>
+							<li><a href="#">牛仔裤</a></li>
+							<li><a href="#">连衣裙</a></li>
+							<li><a href="#">毛呢外套</a></li>
+							<li><a href="#">T恤</a></li>
+							<li><a href="#">衬衫</a></li>
+							<li><a href="#">最IN套装</a></li>
+							<li><a href="#">外套开衫</a></li>
+							<li><a href="#">毛衣/针织衫</a></li>
+							<li><a href="#">TO卫衣</a></li>
+							<li><a href="#">显瘦半身裙系列</a></li>
+							<li><a href="#">7月新品</a></li>
+							<li><a href="#">8月早秋新品</a></li>
+							<li><a href="#">爆款推荐</a></li>
+							<li><a href="#">9月份新品推荐</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- 看了又看模块============================== -->
+				<div class="down_left_third">
+					<div class="see_see">看了又看</div>
+					<div class="see_content">
+						 
+						 
+					</div>
+				</div>
+			</div>
+			<div class="down_mid">
+				<ul class="down_mid_top">
+					<li><a href="#">商品详情</a></li>
+					<li><a href="#">累计评价</a></li>
+					<li><a href="#">本店同类商品</a></li>
+					<div><span><i></i>加入购物车</span></div>
+				</ul>
+				<div class="down_mid_content">
+					<div class="product_detail">
+						<div class="product_detail_title">
+							<h1>商品描述</h1>
+						</div>
+						<div class="product_detail_txt">韩国原版麻花加厚宽松毛衣~ 三个可以选哦，加厚的特别美腻哦~ 特别百搭搭配牛仔，百褶裙都是灰常不错的哦~</div>
+						<div class="product_detail_title">
+							<h1>产品参数</h1>
+						</div>
+						<table class="table_one">
+							<tr>
+								<td>图案: 纯色</td>
+								<td>厚薄: 加厚</td>
+								<td>颜色: 桔色,绿色,杏色</td>
+							</tr>
+							<tr>
+								<td>袖型: 喇叭袖</td>
+								<td>衣门襟: 套头</td>
+								<td>尺码: 均码</td>
+							</tr>
+							<tr>
+								<td>衣长: 常规款（51-65cm）</td>
+								<td>版型: 宽松</td>
+								<td>下摆: 开叉</td>
+							</tr>
+							<tr>
+								<td>季节: 冬季</td>
+								<td>材质: 棉</td>
+								<td>领型: 圆领</td>
+							</tr>
+							<tr>
+								<td>元素: 开叉,柔软洗,罗纹</td>
+								<td>袖长: 长袖</td>
+								<td>风格: 小清新</td>
+							</tr>
+							<tr>
+								<td>潮流: 韩系</td>
+								 
+							</tr>
+						</table>
+						<div class="product_detail_title">
+							<h1>穿着效果</h1>
+						</div>
+						<div class="product_detail_txt">实拍认证店铺【美依家】，图片与实物一致，菇凉们放心选购！</div>
+						<div class="product_detail_pic">
+							<img src="../images/171004_893f49kfh59if5a7f5g0echi4b8i7_790x911.jpg_750x999.jpg" alt="">
+							<img src="../images/171004_45f65b8ha8b9472ge6b752ja7glc7_750x616.jpg_750x999.jpg" alt="">
+							<img src="../images/171004_5jf6l2d92j94i4jfdb5gj8d5981a9_750x1145.jpg_750x999.jpg" alt="">
+							<img src="../images/171004_0ahbkdiagi1al6elg30e7d5iici7b_750x750.jpg_750x999.jpg" alt="">
+							<img src="../images/171004_080lb2e78hgaihc03aaa8gkbkjhi9_1000x666.jpg_750x999.jpg" alt="">
+							<img src="../images/171004_4bj0kdegigjbae47i380gkee85gb0_1000x666.jpg_750x999.jpg" alt="">
+							<img src="../images/171004_1f5hb105aab9ad7ijj9a36c80ajbi_750x621.jpg_750x999.jpg" alt="">
+							<img src="../images/171004_5j30bcd0fb297f947d97be594hgkc_640x960.jpg_750x999.jpg" alt="">
+							<img src="../images/171004_1jk6e1b722g9di4b7ld5b59h2ccg2_640x960.jpg_750x999.jpg" alt="">
+							<img src="../images/171004_0216fi5jf9hdbbdh29kchl6afh6i2_1500x1500.jpg_750x999.jpg" alt="">
+							<img src="../images/171004_7275c7eliijli2cjilgc9ajd50jc8_640x960.jpg_750x999.jpg" alt="">
+							<img src="../images/171004_02ech4h9jh8acaf6aga2ie2lcc8ff_640x960.jpg_750x999.jpg" alt="">
+							<img src="../images/171004_3eg6lgbjcgcjl3ll7j6ibjj2f55fc_640x960.jpg_750x999.jpg" alt="">
+							<img src="../images/171004_76c03009fc5jj893idb10f67hhj40_750x750.jpg_750x999.jpg" alt="">
+							<img src="../images/171004_179ji1ee134ke9l7b72ifec7a8flk_1500x1500.jpg_750x999.jpg" alt="">
+							<img src="../images/171004_82c4j8ecg8jle67jhg15li7542i50_640x960.jpg_750x999.jpg" alt="">
+							<img src="../images/171004_4b5lj2393977hha30f7l162b9h0l0_640x960.jpg_750x999.jpg" alt="">
+							
+						</div>
+						<div class="product_detail_title">
+							<h1>整体款式</h1>
+						</div>
+						<div class="product_detail_pic">
+							<img src="../images/171004_7ga99defbkdhklcebdf1hl1ek4k94_640x960.jpg_750x999.jpg" alt="">
+							<img src="../images/171004_09jbbjg87i44bba8ld6faj4894bac_640x960.jpg_750x999.jpg" alt="">
+							<img src="../images/171004_4396bjgj4afhf9ed1lgl6258g249c_640x960.jpg_750x999.jpg" alt="">
+							<img src="../images/171004_317cii9le89j50hf4a23h33ffdjki_750x750.jpg_750x999.jpg" alt="">
+							<!-- <img src="../images/171004_370la2eef17250c0ah18a291j7k70_750x750.jpg_750x999.jpg" alt=""> -->
+							<img src="../images/171004_1977f9aki140521lfee3jak142c4b_750x750.jpg_750x999.jpg" alt="">
+						</div>
+						<div class="product_detail_title">
+							<h1>细节做工</h1>
+						</div>
+						<div class="product_detail_pic">
+							<img src="../images/171004_358aa9dblg038cc9g6e81d820ej5g_1000x1000.jpg_750x999.jpg" alt="">
+							<img src="../images/171004_262ke8fjgh2ad6457dbl21f41kik1_1000x666.jpg_750x999.jpg" alt="">
+							<img src="../images/171004_09e2j680b6cbg1k2d1hed6fca87h4_1000x666.jpg_750x999.jpg" alt="">
+							<img src="../images/171004_1ja181j86ifebi12h95bb51g013ii_1000x666.jpg_750x999.jpg" alt="">
+						</div>
+						<div class="product_detail_title">
+							<h1>店铺信息</h1>
+						</div>
+						<div class="product_detail_txt">本店默认中通 圆通快递，需要另发快递请联系客服备注或直接留言备注哦~</div>
+						<img src="../images/77101615_6f3ak83kkl00329ged9249aa93ifb_1125x285.jpg_750x999.jpg" alt="">
+						<div class="product_detail_title">
+							<h1>尺码说明</h1>
+						</div>
+						<table class="table_two">
+							<tr>
+								<td>尺码</td>
+								<td>胸围</td>
+								<td>袖长</td>
+								<td>肩宽</td>
+								<td>衣长</td>
+							</tr>
+							<tr>
+								<td>均码</td>
+								<td>110</td>
+								<td>54</td>
+								<td>48</td>
+								<td>60</td>
+							</tr>
+						</table>
+						<div class="annotation">※ 以上尺寸为实物人工测量，因测量当时不同会有1-2cm误差，相关数据仅作参考，以收到实物为准。</div>
+						<div class="product_detail_title">
+							<h1>本店同类商品</h1>
+						</div>
+						<div class="product_detail_similar">
+
+						</div>
+					</div>
+					<div class="assessment">
+						<div class="assessment_title"><h1>买家评价</h1></div>
+					</div>
+					<div class="same_goods">
+						<div class="same_goods_title"><h1>本店同类商品</h1></div>
+						<div class="same_goods_content"></div>
+					</div>
+				</div>
+			</div>
+			<div class="down_right">
+				<div class="down_right_top">
+					<span>手机扫码下单</span>
+					<span> </span>
+					<i class="code_mini"></i>
+					<i class="code_arrow"> </i>
+				</div>
+				<ul>
+					<li><a href="">商品描述</a></li>
+					<li><a href="">产品参数</a></li>
+					<li><a href="">穿着效果</a></li>
+					<li><a href="">整体款式</a></li>
+					<li><a href="">细节做工</a></li>
+					<li><a href="">店铺信息</a></li>
+					<li><a href="">尺码说明</a></li>
+					<li><a href="">商品推荐</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--引入index尾部=====================-->
+		<div class="background">
+			
+			<div class="index_bottom">
+					<div class="index_bottom_top">
+						<div>
+							<h4>-新手帮助-</h4>
+							<p>
+								<a href="#">常见问题</a>
+								<a href="#">自助服务</a>
+								<a href="#">联系客服</a>
+								<a href="#">意见反馈</a>
+							</p>
+						</div>
+						<div>
+							<h4>-权益保障-</h4>
+							<p>
+								 <span>全国包邮</span>
+								 <span>7天无理由退货</span>
+								 <span>退货运费补贴</span>
+								  <span>限时发货</span>
+							</p>
+						</div>
+						<div>
+							<h4>-支付方式-</h4>
+							<p>
+								 <span>微信支付</span>
+								 <span>支付宝</span>
+								 <span>白富美支付</span>
+							</p>
+						</div>
+						<div>
+							<h4>-移动客户端下载-</h4>
+							<p>
+								 <span>蘑菇街<img src="../images/upload_07dhaga6788g05g91890jjd7a4cc3_280x280.png" /></span>
+								 <span>美丽说<img src="../images/upload_5ii9f90fdide17hj3jkj3bfd121e3_280x280.png" /></span>
+								 <span>uni引力<img src="../images/upload_892b80cj47j51h95f44cai2e0b002_280x280.png" /></span>
+							</p>
+						</div>
+					</div>
+					 
+					<div class="index_bottom_bottom">
+						 <p>
+						 	<a href="#">关于我们</a>
+						 	<a href="#">招聘信息</a>
+						 	<a href="#">联系我们</a>
+						 	<a href="#">商家入驻</a>
+						 	<a href="#">商家后台</a>
+						 	<a href="#">蘑菇商学院</a>
+						 	<a href="#">商家社区</a>
+						 	<span>©2017 Mogujie.com 杭州卷瓜网络有限公司</span>
+						 </p>
+						 <p>
+						 	<span>营业执照注册号</span>:
+						 	<a href="#">330106000129004</a>丨
+						 	<span>网络文化经营许可证</span>:
+						 	<a href="#">浙网文（2016）0349-219号</a>丨
+						 	<span>增值电信业务经营许可证</span>:
+						 	<a href="#">浙B2-20110349</a>丨
+						 	<a href="#">安全责任书</a>丨
+						 	<a href="#">浙公网安备 33010602002329号</a>丨
+						 </p>
+					</div>
+				</div>
+		</div>
+	</body>
+</html>

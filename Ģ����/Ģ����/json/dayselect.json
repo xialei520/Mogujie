@@ -1,0 +1,31 @@
+[{
+	"id":1,
+	"title":"秋季套装",
+	"desc":"省心搭配 立减50",
+	"img":"../images/170927_0a53ld2beh5gb978ci47k8a69ib66_280x220.jpg_200x9999.v1c7E.70.jpg"
+},{
+	"id":2,
+	"title":"超in上装",
+	"desc":"降温上衣要穿对",
+	"img":"../images/170927_4b1111i49i4jl706gc86aa4h52h0h_280x220.jpg_200x9999.v1c7E.70.jpg"
+},{
+	"id":3,
+	"title":"平价美妆",
+	"desc":"爆款美妆立减30元",
+	"img":"../images/170927_3lj2kefe2fb8ie97bj5hj16ij5i45_280x220.jpg_200x9999.v1c7E.70.jpg"
+},{
+	"id":4,
+	"title":"早秋鞋靴",
+	"desc":"换季要换鞋",
+	"img":"../images/170927_6i9i7ehlce726388kai9ekk73kl4c_280x220.jpg_200x9999.v1c7E.70.jpg"
+},{
+	"id":5,
+	"title":"精选包配",
+	"desc":"明星同款，大牌气质",
+	"img":"../images/170920_588f5cl5k120jl64347hhe6kj3012_280x220.jpg_200x9999.v1c7E.70.jpg"
+},{
+	"id":6,
+	"title":"团购精选",
+	"desc":"六折优惠，每日更新",
+	"img":"../images/170920_85jejk5ih704g0effh0fe5f2cib3k_280x220.jpg_200x9999.v1c7E.70.jpg"
+}]

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			
+			div{
+				width: 500px;
+				height: 500px;
+				border: 1px solid red;
+				margin: 100px auto;
+				transform-style: preserve-3d;
+			animation:move 3s 3s infinite;
+				
+
+			}
+			div img{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				/*transform: rotateY(180deg);*/
+				transform-origin:center;
+				/*animation: 2s ease-out;*/
+			}
+			/*@keyframes move{
+				from{transform: rotatey(0deg);}
+				to{transform: rotatey(180deg);}
+			}*/
+		</style>
+		<script src = '../js/jquery-1.11.1.js'></script>
+		
+		<script src = '../js/jquery.rotate.min.js'></script>
+		
+		<script>
+			
+			$(function(){
+				var timer = null;
+				$(document).click(function(){
+				timer = setInterval(func, 1000);
+					
+				});
+				 
+				function func(){
+					$("img").rotate({
+						bind:
+						{
+						click: function(){
+						$(this).rotate({ angle:0,animateTo:180,easing: $.easing.easeInOutExpo })
+						}
+						}
+						});
+				}
+				
+			 	
+	
+		 
+			})
+			 
+
+		</script>
+	</head>
+	<body>
+		<div >
+			<img src="../images/146852131_072138djd8f9affi57ha3lccf9440_640x960.jpg_100x100.v1cAC.70.jpg"/>
+		</div>
+		
+	</body>
+</html>

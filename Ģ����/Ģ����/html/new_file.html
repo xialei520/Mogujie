@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>图片旋转</title>
+		<script src = '../js/jquery-1.11.1.js'></script>
+<script>
+(function( $ ) {
+    $.fn.myrotate = function() {
+        var img = this.find("img");
+        var imgpos = img.position();
+        var x0, y0;
+        $(window).load(function() {
+            img.removeAttr("width"); 
+            img.removeAttr("height");
+            x0 = imgpos.left + (img.width() / 2);
+            y0 = imgpos.top + (img.height() / 2);
+        });
+        var x, y, x1, y1, drag = 0;
+        img.css({
+            "cursor": "pointer",
+            "position": "relative"
+        });
+        img.mousemove(function(e) {
+            x1 = e.pageX;
+            y1 = e.pageY;
+            x = x1 - x0;
+            y = y1 - y0;
+            r = 360 - ((180/Math.PI) * Math.atan2(y,x));
+            if (drag == 1) {
+                img.css("transform","rotate(-"+r+"deg)");
+                img.css("-moz-transform","rotate(-"+r+"deg)");
+                img.css("-webkit-transform","rotate(-"+r+"deg)");
+                img.css("-o-transform","rotate(-"+r+"deg)");
+            }
+        });
+        img.mousedown(function() {
+            if (drag == 0) {
+                drag = 1;
+                img.css("-webkit-box-shadow", "0 0 5px #999");
+                img.css("-moz-box-shadow", "0 0 5px #999");
+                img.css("box-shadow", "0 0 5px #999");
+            } else {
+                drag = 0;
+                img.css("-webkit-box-shadow", "0 0 2px #999");
+                img.css("-moz-box-shadow", "0 0 2px #999");
+                img.css("box-shadow", "0 0 2px #999");
+            }
+        });
+       img.mouseleave(function() {
+            drag = 0;
+        });
+    };
+})( jQuery );
+$(function() {
+    $("#content").myrotate();
+    $("#circle").myrotate();
+});
+</script>
+<style>
+body {
+    background: #fff url('/jscss/demoimg/201312/px_by_Gre3g.png') repeat top right;
+    margin: 0;
+    padding: 0;
+}
+#main {
+    background: #0099cc;
+    margin-top: 0;
+    padding: 2px 0 4px 0;
+    text-align: center;
+}
+#main a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial;
+    text-shadow: -1px -1px 1px #999;
+}
+#main a:hover {
+    text-decoration: underline;
+}
+#container {
+    width:780px;
+    margin:0 auto;
+}
+#help {
+    color: #fff;
+    font-size: 34px;
+    text-align: center;
+    margin-top: 40px;
+    text-shadow: -1px -1px 1px #666;
+}
+#content, #circle {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    margin-top: 60px;
+    padding:20px;
+    background:#f3f3f3;
+    -webkit-border-radius: .8em;
+    -moz-border-radius: .8em;
+    border-radius: .8em;
+    float: left;
+    margin-right: 50px;
+}
+#content img {
+    -webkit-box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
+    -webkit-border-radius: .8em;
+    -moz-border-radius: .8em;
+    border-radius: .8em;
+}
+#circle img {
+    -webkit-box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
+    -webkit-border-radius: 8.8em;
+    -moz-border-radius: 8.8em;
+    border-radius: 8.8em;
+}
+</style>
+</head>
+<body>
+<div id="main">
+  </div>
+    <div id="container">
+        <div id="help">
+            点击图片或移动鼠标实现图片旋转<br/>再次点击或停止移动鼠标图片停止旋转
+        </div>
+        <div id="content">
+            <img src="/jscss/demoimg/201312/img.jpg"/>
+        </div>
+        <div id="circle">
+            <img src="/jscss/demoimg/201312/img.jpg"/>
+        </div>
+    </div>
+</body>
+</html>

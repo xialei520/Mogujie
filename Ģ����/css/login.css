@@ -1,0 +1,151 @@
+body,ul,li,p,form,h1,h2,h3,h4{margin:0;padding: 0;}
+ li{list-style: none;}
+ a{text-decoration: none;font-size: 12px;display: block;}
+ input{float: left;border:0;}
+ img{display: block;border:0;}
+  span{display: block;} 
+ /*body{margin-right: 30px;}*/
+
+
+.logo{
+	width: 1200px;
+	height: 57px;
+	margin:20px 32px;
+	/*border: 1px solid green;*/
+	position: relative;
+	
+}
+.logo a{
+	display: inline-block;
+}
+.logo span{
+	width: 861px;
+	height: 28px;
+	margin-left: 20px;
+	display: inline-block;
+	position: absolute;
+    margin-top: 12px;
+    background-color: #ffefef;
+    border: 1px solid #ffc0cc;
+    text-align: center;
+    line-height: 28px;
+    font-size: 11px;
+    color: #666;
+}
+.banner{
+	width: 1264px;
+	height: 600px;
+	border:1px solid red;
+	background: url(../images/upload_541i9di2b3icf9j13f24e0bg7b1i6_1920x600.png) no-repeat center top;
+	background-size: cover;
+	position: relative;
+}
+.banner .loginbox{
+	width: 400px;
+	height: 348px;
+	position: absolute;
+	left: 790px;
+	top:80px;
+	background: rgba(255,255,255, 0.9);
+	position: relative;
+}
+.banner .loginbox .login{
+	width: 394px;
+	height: 54px;
+	margin-left: 5px;
+	border-bottom: 1px solid #ccc;
+}
+.banner .loginbox .login a{
+	display: inline-block;
+
+}
+.banner .loginbox .login a:nth-of-type(1){
+	border-bottom: 2px solid #ff4066;
+	color: #fe617a;
+}
+.banner .loginbox .login a{
+	width: 116px;
+	height: 41px;
+	margin:10px 39px 0 39px;
+	padding-bottom: 2px;
+	line-height: 42px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #3c3c3c;
+}
+.banner .loginbox .login_QRcode{
+	width: 46px;
+	height: 46px;
+	background: url(../images/upload_ie4tmnzrmuydmmbqhazdambqgqyde_46x46.png) no-repeat;
+	cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.banner .loginbox .loginbox_login input:nth-of-type(-n+2){
+	width: 300px;
+	height: 40px;
+	padding:0 6px;
+	margin-top: 15px;
+	margin-left: 44px;
+	line-height: 40px;
+	outline: none;
+	background: rgba(255,255,255, 0);
+	border: 1px solid #ccc;
+}
+.banner .loginbox .loginbox_login input:nth-of-type(3){
+	margin-top:25px;
+	width: 314px;
+	height: 40px;
+	border: 0;
+	background: #ff5777;
+    border-radius: 2px;
+    cursor: pointer;
+    color: #fff;
+	margin-left: 44px;
+    outline: none;
+}
+.banner .loginbox .loginbox_login .elselogin{
+	width: 356px;
+	height: 23px;
+	padding-top: 31px;
+	margin-left: 44px;
+	overflow: hidden;
+	 vertical-align: middle; 
+}
+.banner .loginbox .loginbox_login .elselogin a{
+	display: inline-block;
+	color: #333;
+	
+	/*line-height: 19px;
+	height: 19px;*/
+}
+.banner .loginbox .loginbox_login .elselogin a img{
+	display: inline-block;
+	vertical-align: top;
+	height: 19px;
+	width: 19px;
+	margin-right: 6px;
+}
+.banner .loginbox .loginbox_login .elselogin a:nth-of-type(1){
+	margin-right: 47px;
+}
+.banner .loginbox .loginbox_login .forgetpassword{
+	width: 312px;
+	height: 19px;
+	padding:20px 44px 0 0;
+	margin-left: 44px;
+	text-align: right;
+}
+.banner .loginbox .loginbox_login .forgetpassword a{
+	color: #959595;
+	text-decoration: underline;
+}
+ /*引入index.css尾部=============================*/
+.background .index_bottom{
+	height: 220px;
+}
+.background .index_bottom .index_bottom_bottom{
+	border:0;
+}

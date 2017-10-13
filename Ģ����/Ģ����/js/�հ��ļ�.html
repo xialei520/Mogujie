@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<style type="text/css">
+.text{ width: 170px; margin-bottom: 60px; line-height: 1.8;}
+</style>
+</head>
+<body>
+<div class="text">jq多行文本超出多余的字就不显示jq多行文本超出多余的字就不显示</div>
+<div class="text">我这是第二段文本内容，跟第一段不一样了</div>
+
+
+
+
+<script type="text/javascript">
+window.onload=function(){ 
+	//多余的字显示...
+	//可以重复使用
+	var num = $('.text').size()
+	for(var i=0; i<num; i++){
+		var titleStr = $(".text").eq(i).text();
+		var maxLen = 20;//设置要显示的字符数
+		if(titleStr.length > maxLen){
+		   $(".text").eq(i).html(titleStr.substring(0,maxLen)+"... ");
+		}
+		else{
+			$(".text").eq(i).html(titleStr);
+		}
+	}
+
+
+}
+</script>
+</body>
+</html>
+阅读全文
